@@ -51,7 +51,7 @@ export default function About() {
                     // Cuando la imagen carga, cambiamos el estado para activar la animación
                     onLoad={() => setAvatarLoaded(true)}
                     // Ajustamos el tamaño y sombra para que se vea mejor
-                    className="max-w-[450px] drop-shadow-2xl" 
+                    className="w-[350px] max-w-[450px] drop-shadow-2xl" 
                 />
             </div>
 

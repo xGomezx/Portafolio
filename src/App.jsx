@@ -1,14 +1,19 @@
 import BinaryBackground from './Components/BinaryBackground';
 import About from './Seccions/About';
+import { NavBar } from './Layouts/NavBar';
+import { Projects } from './Seccions/Projects';
+import { Footer } from './Layouts/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='w-screen h-screen relative overflow-x-hidden'>
       <BinaryBackground />
-      <nav> {/* Tu Navbar aquí */} </nav>
+      <NavBar />
       <main>
-        <About /> {/* Sección About */}
+        <About />
+        <Projects />
       </main>
+      <Footer />
     </div>
   );
   } 
