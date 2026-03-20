@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Avatar from '../assets/Avatar-removebg-preview.png'
 
-export default function About() {
+export default function About({ className, id }) {
     // Textos a escribir
     const titleBase = "HI, I'M ";
     const name = "JUANJO";
@@ -40,6 +40,7 @@ export default function About() {
     }, [index, roleIndex]);
 
     return (
+        <section id={id} className={className}>
         <div className='h-screen w-screen flex justify-start items-center text-white p-10 overflow-hidden'>
 
             {/* Contenedor del Avatar con animación */}
@@ -83,5 +84,6 @@ export default function About() {
                 
             </div>
         </div>
+        </section>
     )
 }
