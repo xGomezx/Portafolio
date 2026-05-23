@@ -40,13 +40,13 @@ export const ContactForm = () => {
         <div className="flex justify-center text-[#00ff88]">
           <CheckCircle size={48} />
         </div>
-        <h3 className="text-xl font-bold">¡Mensaje enviado!</h3>
-        <p className="text-gray-400">Gracias por contactarme, te responderé lo antes posible.</p>
+        <h3 className="text-xl font-bold">¡Message sent!</h3>
+        <p className="text-gray-400">Thank you for contacting me, I will respond as soon as possible.</p>
         <button 
           onClick={() => setStatus("")}
           className="text-[#00ff88] underline hover:text-[#00cc6e] transition"
         >
-          Enviar otro mensaje
+          Send another message
         </button>
       </div>
     );
@@ -61,7 +61,7 @@ export const ContactForm = () => {
       <input 
         name="nombre"
         type="text" 
-        placeholder="Tu Nombre" 
+        placeholder="Your name" 
         required
         className="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:border-[#00ff88] outline-none" 
       />
@@ -69,14 +69,14 @@ export const ContactForm = () => {
       <input 
         name="email"
         type="email" 
-        placeholder="Tu Email" 
+        placeholder="Your Email" 
         required
         className="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:border-[#00ff88] outline-none" 
       />
 
       <textarea 
         name="mensaje"
-        placeholder="Tu Mensaje" 
+        placeholder="Your Message" 
         rows="4" 
         required
         className="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:border-[#00ff88] outline-none resize-none"
@@ -87,11 +87,11 @@ export const ContactForm = () => {
         disabled={loading}
         className="w-full bg-[#00ff88] text-black font-bold py-3 rounded-lg hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {loading ? "Enviando..." : "Enviar Mensaje"} <Send size={18} />
+        {loading ? "Sending..." : "Send Message"} <Send size={18} />
       </button>
 
       {status === "ERROR" && (
-        <p className="text-red-500 text-sm text-center">Ocurrió un error, por favor intenta de nuevo.</p>
+        <p className="text-red-500 text-sm text-center">An error occurred, please try again.</p>
       )}
     </form>
   );

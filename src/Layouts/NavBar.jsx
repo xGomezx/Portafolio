@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../assets/Avatar-removebg-preview.png'
+import CV from '../assets/CV-JuanJoseGomez.pdf'
 import { Download } from 'lucide-react';
 
 export const NavBar = () => {
@@ -20,7 +21,7 @@ export const NavBar = () => {
             </ul>
            
             {/* El botón de descarga ahora apunta al archivo correctamente */}
-            <a href={Avatar} download="Mi_CV.png" className='inline-block'>
+            <a href={CV} download="CV-JuanJoseGomez.pdf" className='inline-block'>
                 <button type="button" className='cursor-pointer bg-white text-black px-4 py-2 rounded-lg font-bold hover:bg-emerald-500 hover:text-white transition-all flex items-center gap-2'>
                     Download CV
                     <Download size={20} />

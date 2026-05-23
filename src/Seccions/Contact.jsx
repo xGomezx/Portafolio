@@ -9,8 +9,8 @@ export const Contact = ({ className, id }) => {
         <section id="contact" className="text-white py-20 px-6 mt-32 max-w-5xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div className="space-y-6">
-                    <h2 className="text-4xl font-bold">Hablemos <span className="text-[#00ff88]">ahora</span></h2>
-                    <p className="text-gray-400">Estoy disponible para nuevos proyectos y colaboraciones.</p>
+                    <h2 className="text-4xl font-bold">Let's talk <span className="text-[#00ff88]">now</span></h2>
+                    <p className="text-gray-400">I am available for new projects and collaborations</p>
 
                     <div className="space-y-4">
                         <SocialCard item={{link: "mailto:juanjosegomez182@gmail.com", icon: <Mail />, label: "Email", value: "juanjosegomez182@gmail.com" }} />
