@@ -19,6 +19,9 @@ export const NavBar = () => {
             <a href="#about">About</a>
           </li>
           <li className='hover:text-emerald-500 transition-colors'>
+            <a href="#stack">Stack</a>
+          </li>
+          <li className='hover:text-emerald-500 transition-colors'>
             <a href="#projects">Projects</a>
           </li>
           <li className='hover:text-emerald-500 transition-colors'>

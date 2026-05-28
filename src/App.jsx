@@ -4,6 +4,7 @@ import { NavBar } from './Layouts/NavBar';
 import { Projects } from './Seccions/Projects';
 import { Footer } from './Layouts/Footer';
 import { Contact } from './Seccions/Contact';
+import {Stack} from './Seccions/Stack';
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <main>
         <About id="about" className="h-auto scroll-mt-24" />
+        <Stack id="stack" className="h-auto scroll-mt-24" />
         <Projects id="projects" className="h-auto scroll-mt-24" />
         <Contact id="contact" className="h-auto scroll-mt-24" />
       </main>

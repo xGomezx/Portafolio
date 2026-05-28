@@ -7,11 +7,11 @@ export const Projects = ({ className, id }) => {
       <div className='w-full px-4 sm:px-8 md:px-10 py-16'>
 
         {/* Título */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center text-center'>
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl font-bold flex gap-2'>
             Best/ <span className='text-emerald-500'>Projects</span>
           </h1>
-          <span className='w-24 h-1 bg-emerald-500 mx-auto mt-4 rounded-full'></span>
+          <span className='w-24 text-start h-1 bg-emerald-500 mx-auto mt-4 rounded-full'></span>
         </div>
 
         {/* Cards */}
